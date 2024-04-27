@@ -26,6 +26,7 @@
                         type="text"
                         id="name"
                         name="name"
+                        class="block"
                         required
                         minlength="1"
                         maxlength="30"
@@ -34,10 +35,11 @@
                     </div>
                     <div class="box-input">
                         <label for="cel">Número de celular: <span>*</span></label>
-                        <input
+                        <input class="block"
                         type="text"
                         id="cel"
                         name="cel"
+                        class="block"
                         required
                         minlength="1"
                         maxlength="30"
@@ -50,6 +52,7 @@
                         type="email"
                         id="email"
                         name="email"
+                        class="block"
                         required
                         minlength="1"
                         maxlength="30"
@@ -60,7 +63,80 @@
                 <div class="box-input">
                     <p class="warning">*Este campo não é obrigatório mas poderá ajudar o seu produto a ser melhor avaliado.</p>
                     <label for="description">Descrição/Motivo da venda:</label>
-                    <textarea name="description" id="description" placeholder="Fale um pouco sobre o motivo da venda"></textarea>
+                    <textarea name="description" id="description" placeholder="Fale um pouco sobre o motivo da venda."></textarea>
+                </div>
+                <div class="box-input">
+                    <label for="preco">Preço de Venda: <span>*</span></label>
+                    <input
+                    type="number"
+                    id="preco"
+                    name="preco"
+                    class="block"
+                    required
+                    minlength="1"
+                    maxlength="30"
+                    placeholder="Digite o preço do Smartphone"
+                    >
+                </div>
+                <div class="box-input">
+                    <label for="brand">Marca: <span>*</span></label>
+                    <input
+                    type="text"
+                    id="brand"
+                    name="brand"
+                    class="block"
+                    required
+                    placeholder="Digite a marca do celular. (ex: Sansung)"
+                    >
+                </div>
+                <div class="box-input">
+                    <label for="model">Modelo: <span>*</span></label>
+                    <input
+                    type="text"
+                    id="model"
+                    name="model"
+                    class="block"
+                    required
+                    placeholder="Digite o modelo do celular. (ex: Galaxy S20)."
+                    >
+                </div>
+                <div class="box-input">
+                    <label for="purchase_date">Data de compra: <span>*</span></label>
+                    <input
+                    type="date"
+                    id="purchase_date"
+                    name="purchase_date"
+                    class="block"
+                    required
+                    >
+                </div>
+                <div class="box-input">
+                    <p>Smartphone foi adquirido usado? <span>*</span></p>
+                    <input type="radio" id="sim" name="chose" >
+                    <label for="sim">Sim</label>
+                    <input type="radio" id="nao" name="chose" checked>
+                    <label for="nao">Não</label>
+                </div>
+                <div class="optional-input">
+                    <p>Acessórios contidos: <span>*</span></p>
+                    <ui class="optional-list">
+                        <li>
+                            <input type="checkbox" id="charger" name="optionals[]" name="charger">
+                            <label for="charger">Carregador</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="ear-phone" name="optionals[]" name="ear-phone">
+                            <label for="ear-phone">Fone de ouvido</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="back-protection" name="optionals[]" name="back-protection">
+                            <label for="back-protection">Capa protetora</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="front-protection" name="optionals[]" name="front-protection">
+                            <label for="front-protection">Película de vidro</label>
+                        </li>
+                    </ui>
                 </div>
                 <input type="submit" value="Enviar">
                 </form>

@@ -3,10 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário de venda de carros</title>
+    <title>Formulário de venda de Smartphone</title>
     <link rel="stylesheet" href="estilos/styles.css">
 </head>
 <body>
-    
+    <div class="container">
+        <div class="header-container">
+            <h3>Venda o seu Smartphone mais rápido!</h3>
+        </div>
+        <div class="form-container">
+            <div class="form-header">
+                <p>Formulário</p>
+            </div>
+            <div class="form-body">
+                <h1 class="form-title">Cadastre o seu produto</h1>
+                <p>Preencha as Informações necessárias abaixo:</p>
+                <h3>Informações sobre o(a) vendedor(a): </h3>
+                <form>
+                    <div class="box-input">
+                        <label for="name">Nome: <span>*</span></label>
+                        <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        required
+                        minlength="1"
+                        maxlength="30"
+                        placeholder="Digite o nome do vendedor"
+                        >
+                    </div>
+                    <div class="box-input">
+                        <label for="cel">Número de celular: <span>*</span></label>
+                        <input
+                        type="text"
+                        id="cel"
+                        name="cel"
+                        required
+                        minlength="1"
+                        maxlength="30"
+                        placeholder="Digite o número de celular"
+                        >
+                    </div>
+                    <div class="box-input">
+                        <label for="email">Email: <span>*</span></label>
+                        <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                        minlength="1"
+                        maxlength="30"
+                        placeholder="Digite o email"
+                        >
+                    </div>
+                <h3>Informações sobre o Smartphone: </h3>
+                <div class="box-input">
+                    <p class="warning">*Este campo não é obrigatório mas poderá ajudar o seu produto a ser melhor avaliado.</p>
+                    <label for="description">Descrição/Motivo da venda:</label>
+                    <textarea name="description" id="description" placeholder="Fale um pouco sobre o motivo da venda"></textarea>
+                </div>
+                <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

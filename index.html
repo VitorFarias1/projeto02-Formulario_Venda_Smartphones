@@ -61,9 +61,9 @@
                     </div>
                 <h3>Informações sobre o Smartphone: </h3>
                 <div class="box-input">
-                    <p class="warning">*Este campo não é obrigatório mas poderá ajudar o seu produto a ser melhor avaliado.</p>
                     <label for="description">Descrição/Motivo da venda:</label>
-                    <textarea name="description" id="description" placeholder="Fale um pouco sobre o motivo da venda."></textarea>
+                    <textarea class="block" name="description" id="description" placeholder="Fale um pouco sobre o motivo da venda."></textarea>
+                    <p class="warning">*Este campo não é obrigatório mas poderá ajudar o seu produto a ser melhor avaliado.</p>
                 </div>
                 <div class="box-input">
                     <label for="preco">Preço de Venda: <span>*</span></label>
@@ -138,7 +138,11 @@
                         </li>
                     </ui>
                 </div>
-                <input type="submit" value="Enviar">
+                <div class="last-input">
+                    <p>Anexe uma imagem do Smartphone: <span>*</span> </p>
+                    <input type="file" accept="image/png, image/jpeg" name="image" id="image" required>
+                </div>
+                <input type="submit" value="Enviar" class="btn-submit">
                 </form>
             </div>
         </div>
